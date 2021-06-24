@@ -1,0 +1,72 @@
+.brd {
+    border: solid 2px black;
+    display: inline-block;
+    width: 32%;
+    height: 300px;
+    margin: 0px 8px;
+    border-radius: 10px;
+    font-size: 36px bold;
+    color: white;
+    
+}
+.brd1{
+    position: relative;
+    background: linear-gradient(to right, #488054 20%, #dedede);
+    overflow: hidden;
+}
+.brd2{
+    position: relative;
+    background: linear-gradient(to right, #2f13c9 20%, #dedede);
+    overflow: hidden;
+}
+.brd3{
+    position: relative;
+    background: linear-gradient(to right, #69076d 20%, #dedede);
+    overflow: hidden;
+}
+.absolut1{
+    position: absolute;
+    right: 45px;
+    top: 45px;
+}
+.pad{
+    padding-left: 90px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.pad-1{
+
+}
+.pad-2{
+    font-size: 40px;
+   font-weight: bold; 
+}
+.pad-3{
+  padding-top: 30px; 
+}
+.brd1::before,
+.brd2::before,
+.brd3::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(238, 130, 238, 0.247);
+    border-radius: 300px;
+    right: -80px;
+    top: -60px;
+}
+.brd1::after,
+.brd2::after,
+.brd3::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(238, 130, 238, 0.247);
+    border-radius: 300px;
+    right: -10px;
+    bottom: -120px;
+}
